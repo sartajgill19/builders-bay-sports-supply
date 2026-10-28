@@ -503,6 +503,43 @@
   }
   .footer .brand-mark{font-size:13px;}
 
+  /* ===== CONTACT / PHONE ===== */
+  .hero-top-right{display:flex; align-items:center; gap:28px;}
+  .phone-link{
+    color:#fff;
+    text-decoration:none;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    letter-spacing:0.06em;
+    border:1px solid rgba(255,255,255,0.35);
+    padding:9px 14px;
+    transition:background 0.2s ease, border-color 0.2s ease;
+  }
+  .phone-link:hover{background:var(--orange); border-color:var(--orange);}
+  @media (max-width:640px){
+    .hero-top .eyebrow{display:none;}
+    .phone-link{white-space:nowrap; padding:8px 10px; font-size:12px;}
+    .hero-top .brand-mark{font-size:12px;}
+  }
+
+  .closing .contact{
+    margin-top:28px;
+    padding-top:22px;
+    border-top:1px solid var(--line-dark);
+  }
+  .closing .contact .eyebrow{color:rgba(255,255,255,0.45); display:block; margin-bottom:8px;}
+  .closing .contact a{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:28px;
+    font-weight:600;
+    color:#fff;
+    text-decoration:none;
+    transition:color 0.2s ease;
+  }
+  .closing .contact a:hover{color:var(--orange);}
+  .footer a{color:rgba(255,255,255,0.7); text-decoration:none;}
+  .footer a:hover{color:var(--orange);}
+
   /* reveal animation */
   .reveal{
     opacity:0;
@@ -529,7 +566,10 @@
     <img src="images/hero.jpg" alt="Heavy-duty basketball hoop tempered glass backboard against dramatic sky">
     <div class="hero-top">
       <div class="brand-mark">BUILDERS BAY <span>SPORTS SUPPLY</span></div>
-      <div class="eyebrow">In-Ground · Adjustable · Steel Frame</div>
+      <div class="hero-top-right">
+        <span class="eyebrow">In-Ground · Adjustable · Steel Frame</span>
+        <a class="phone-link" href="tel:+16048007575">604-800-7575</a>
+      </div>
     </div>
     <div class="hero-content">
       <div>
@@ -701,11 +741,15 @@
         <span class="eyebrow">Heavy-Duty Adjustable Hoop</span>
         <div class="amount">$1,800</div>
         <div class="tax">+ tax</div>
+        <div class="contact">
+          <span class="eyebrow">Questions? Call</span>
+          <a href="tel:+16048007575">604-800-7575</a>
+        </div>
       </div>
     </div>
     <div class="footer">
       <div class="brand-mark">BUILDERS BAY <span style="color:var(--orange)">SPORTS SUPPLY</span></div>
-      <div>Heavy-Duty Adjustable Basketball Hoop</div>
+      <div>Heavy-Duty Adjustable Basketball Hoop · <a href="tel:+16048007575">604-800-7575</a></div>
     </div>
   </section>
 
