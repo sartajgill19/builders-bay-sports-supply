@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heavy-Duty Adjustable Basketball Hoop — Builders Bay Sports Supply</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root{
+    --ink:#1B1F22;
+    --graphite:#14171A;
+    --graphite-2:#20242A;
+    --paper:#FAF8F4;
+    --paper-2:#F1EDE5;
+    --orange:#D9531E;
+    --orange-2:#B8441A;
+    --steel:#5B6570;
+    --glass:#C7D5D9;
+    --line:#DCD6C9;
+    --line-dark:#33393F;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  h1,h2,h3{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
+  }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    font-weight:500;
+  }
+
+  a{color:inherit;}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:flex-end;
+    background:#0c0e10;
+    overflow:hidden;
+  }
+  .hero img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:60% 30%;
+    opacity:0.92;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg, rgba(10,12,14,0.15) 0%, rgba(10,12,14,0.05) 35%, rgba(10,12,14,0.85) 100%);
+    z-index:1;
+  }
+  .hero-top{
+    position:absolute;
+    top:0; left:0; right:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:32px clamp(20px,5vw,64px);
+    z-index:3;
+  }
+  .brand-mark{
+    color:#fff;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:0.08em;
+  }
+  .brand-mark span{color:var(--orange);}
+  .hero-top .eyebrow{color:rgba(255,255,255,0.65);}
+
+  .hero-content{
+    position:relative;
+    z-index:2;
+    width:100%;
+    padding:0 clamp(20px,5vw,64px) clamp(56px,8vw,96px);
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:40px;
+    flex-wrap:wrap;
+  }
+  .hero-content h1{
+    color:#fff;
+    font-size:clamp(40px, 7vw, 88px);
+    line-height:0.98;
+    max-width:820px;
+  }
+  .hero-content h1 em{
+    font-style:normal;
+    color:var(--orange);
+  }
+  .hero-sub{
+    color:rgba(255,255,255,0.72);
+    font-size:17px;
+    max-width:420px;
+    line-height:1.55;
+    margin-top:22px;
+  }
+  .price-plate{
+    background:rgba(20,23,26,0.55);
+    backdrop-filter:blur(6px);
+    border:1px solid rgba(255,255,255,0.18);
+    padding:20px 24px;
+    min-width:180px;
+    flex-shrink:0;
+  }
+  .price-plate .eyebrow{color:rgba(255,255,255,0.55); margin-bottom:8px; display:block;}
+  .price-plate .amount{
+    color:#fff;
+    font-family:'Space Grotesk', sans-serif;
+    font-size:34px;
+    font-weight:600;
+  }
+  .price-plate .tax{
+    color:rgba(255,255,255,0.5);
+    font-size:13px;
+    margin-top:2px;
+  }
+
+  .scroll-cue{
+    position:absolute;
+    bottom:24px;
+    left:clamp(20px,5vw,64px);
+    z-index:3;
+    color:rgba(255,255,255,0.5);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .scroll-cue::after{
+    content:"";
+    width:1px; height:28px;
+    background:rgba(255,255,255,0.4);
+    animation:scrolldrop 2s ease-in-out infinite;
+  }
+  @keyframes scrolldrop{
+    0%{transform:scaleY(0); transform-origin:top;}
+    50%{transform:scaleY(1); transform-origin:top;}
+    50.01%{transform-origin:bottom;}
+    100%{transform:scaleY(0); transform-origin:bottom;}
+  }
+
+  /* ===== LEDE ===== */
+  .lede{
+    max-width:920px;
+    margin:0 auto;
+    padding:clamp(80px,10vw,140px) clamp(20px,5vw,64px) clamp(60px,8vw,90px);
+  }
+  .lede .eyebrow{color:var(--orange); margin-bottom:20px; display:block;}
+  .lede p{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:clamp(24px,3.4vw,38px);
+    line-height:1.32;
+    font-weight:500;
+    color:var(--ink);
+  }
+  .lede p strong{
+    font-weight:600;
+    color:var(--orange-2);
+  }
+  .lede .fine{
+    margin-top:28px;
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    font-weight:400;
+    line-height:1.6;
+    color:var(--steel);
+    max-width:640px;
+  }
+
+  /* ===== ANATOMY / DIAGRAM ===== */
+  .anatomy{
+    background:var(--graphite);
+    color:#fff;
+    padding:clamp(70px,9vw,110px) clamp(20px,5vw,64px);
+  }
+  .anatomy-head{
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    flex-wrap:wrap;
+    margin-bottom:clamp(40px,6vw,64px);
+  }
+  .anatomy-head .eyebrow{color:var(--orange);}
+  .anatomy-head h2{
+    font-size:clamp(28px,4vw,44px);
+    margin-top:12px;
+    max-width:560px;
+  }
+  .anatomy-head .cap{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:rgba(255,255,255,0.4);
+    max-width:260px;
+    line-height:1.6;
+    text-align:right;
+  }
+
+  .diagram-wrap{
+    max-width:1200px;
+    margin:0 auto;
+    position:relative;
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  .diagram-frame{
+    position:relative;
+    border:1px solid var(--line-dark);
+    padding:clamp(20px,4vw,40px);
+  }
+  .diagram-frame::before{
+    content:"FIG.01 — LIFT & FRAME ASSEMBLY";
+    position:absolute;
+    top:-1px; left:-1px;
+    background:var(--orange);
+    color:#14171A;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    letter-spacing:0.1em;
+    padding:6px 10px;
+    font-weight:600;
+  }
+  .diagram-img-box{
+    position:relative;
+    width:100%;
+    max-width:560px;
+    margin:0 auto;
+  }
+  .diagram-img-box img{
+    width:100%;
+    display:block;
+    filter:saturate(0.92) contrast(1.02);
+  }
+
+  .callout{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:#fff;
+  }
+  .callout .dot{
+    width:7px; height:7px;
+    border-radius:50%;
+    background:var(--orange);
+    flex-shrink:0;
+    box-shadow:0 0 0 4px rgba(217,83,30,0.18);
+  }
+  .callout .line{
+    height:1px;
+    background:rgba(255,255,255,0.35);
+  }
+  .callout .txt .label{
+    color:#fff;
+    font-weight:600;
+    letter-spacing:0.02em;
+  }
+  .callout .txt .val{
+    color:rgba(255,255,255,0.55);
+    font-size:11px;
+    margin-top:2px;
+  }
+
+  /* callout positions - percentage based over diagram-img-box */
+  .c1{ top:6%; left:102%; }
+  .c1 .line{ width:34px; }
+  .c2{ top:38%; left:102%; }
+  .c2 .line{ width:34px; }
+  .c3{ top:56%; left:102%; }
+  .c3 .line{ width:34px; }
+  .c4{ top:74%; right:102%; flex-direction:row-reverse; text-align:right; }
+  .c4 .line{ width:34px; }
+  .c5{ top:94%; right:102%; flex-direction:row-reverse; text-align:right; }
+  .c5 .line{ width:34px; }
+
+  @media (max-width:820px){
+    .diagram-wrap{padding-top:20px;}
+    .callout{position:static; margin-bottom:14px; flex-direction:row !important; text-align:left !important;}
+    .callout .line{display:none;}
+    .callout-list{
+      max-width:560px;
+      margin:32px auto 0;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px 24px;
+    }
+  }
+  @media (min-width:821px){
+    .callout-list{display:contents;}
+  }
+
+  /* ===== SPEC SHEET ===== */
+  .specsheet{
+    padding:clamp(80px,9vw,120px) clamp(20px,5vw,64px);
+    max-width:1200px;
+    margin:0 auto;
+  }
+  .specsheet-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    flex-wrap:wrap;
+    margin-bottom:48px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:28px;
+  }
+  .specsheet-head .eyebrow{color:var(--orange-2);}
+  .specsheet-head h2{font-size:clamp(28px,4vw,44px); margin-top:12px;}
+  .specsheet-head .meta{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--steel);
+    text-align:right;
+    line-height:1.6;
+  }
+
+  .spec-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:0;
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+  }
+  @media (max-width:760px){
+    .spec-grid{grid-template-columns:1fr;}
+  }
+  .spec-group{
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding:32px clamp(20px,3vw,36px);
+  }
+  .spec-group h3{
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--orange-2);
+    margin-bottom:20px;
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+  }
+  .spec-row{
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    padding:11px 0;
+    border-bottom:1px dashed var(--line);
+    font-size:14px;
+  }
+  .spec-row:last-child{border-bottom:none;}
+  .spec-row .k{color:var(--steel);}
+  .spec-row .v{
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--ink);
+    text-align:right;
+    font-size:13px;
+  }
+
+  /* ===== GALLERY ===== */
+  .gallery{
+    padding:clamp(60px,8vw,100px) clamp(20px,5vw,64px) clamp(90px,10vw,120px);
+    background:var(--paper-2);
+  }
+  .gallery-head{
+    max-width:1200px;
+    margin:0 auto 40px;
+  }
+  .gallery-head .eyebrow{color:var(--orange-2);}
+  .gallery-head h2{font-size:clamp(28px,4vw,44px); margin-top:12px;}
+
+  .gallery-grid{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:14px;
+  }
+  @media (max-width:900px){
+    .gallery-grid{grid-template-columns:repeat(2, 1fr);}
+  }
+  @media (max-width:560px){
+    .gallery-grid{grid-template-columns:1fr;}
+  }
+  .gallery-item{
+    position:relative;
+    overflow:hidden;
+    aspect-ratio:4/5;
+    background:#000;
+  }
+  .gallery-item img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform 0.6s cubic-bezier(.2,.7,.2,1);
+  }
+  .gallery-item:hover img{transform:scale(1.05);}
+  .gallery-cap{
+    position:absolute;
+    left:0; right:0; bottom:0;
+    padding:14px 16px;
+    background:linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+    color:#fff;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:0.03em;
+  }
+
+  /* ===== CLOSING ===== */
+  .closing{
+    background:var(--graphite);
+    color:#fff;
+    padding:clamp(80px,10vw,130px) clamp(20px,5vw,64px) clamp(50px,6vw,70px);
+  }
+  .closing-inner{
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:40px;
+    flex-wrap:wrap;
+    border-bottom:1px solid var(--line-dark);
+    padding-bottom:56px;
+  }
+  .closing h2{
+    font-size:clamp(30px,5vw,56px);
+    max-width:640px;
+    line-height:1.08;
+  }
+  .closing h2 span{color:var(--orange);}
+  .closing .price-block{
+    text-align:right;
+  }
+  .closing .price-block .eyebrow{color:rgba(255,255,255,0.45); display:block; margin-bottom:10px;}
+  .closing .price-block .amount{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:46px;
+    font-weight:600;
+  }
+  .closing .price-block .tax{
+    color:rgba(255,255,255,0.5);
+    font-size:13px;
+    margin-top:4px;
+  }
+
+  .footer{
+    max-width:1200px;
+    margin:0 auto;
+    padding-top:32px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    flex-wrap:wrap;
+    color:rgba(255,255,255,0.45);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+  }
+  .footer .brand-mark{font-size:13px;}
+
+  /* reveal animation */
+  .reveal{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.in{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1; transform:none; transition:none;}
+    .scroll-cue::after{animation:none;}
+    .gallery-item:hover img{transform:none;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Heavy-duty basketball hoop tempered glass backboard against dramatic sky">
+    <div class="hero-top">
+      <div class="brand-mark">BUILDERS BAY <span>SPORTS SUPPLY</span></div>
+      <div class="eyebrow">In-Ground · Adjustable · Steel Frame</div>
+    </div>
+    <div class="hero-content">
+      <div>
+        <h1>Built like it's<br><em>permanent.</em></h1>
+        <p class="hero-sub">A tempered-glass, steel-column hoop system engineered for driveways and courts that only get installed once. Square-tube column, welded frame, screw-driven lift — no shortcuts in the steel.</p>
+      </div>
+      <div class="price-plate">
+        <span class="eyebrow">Heavy-Duty Adjustable Hoop</span>
+        <div class="amount">$1,800</div>
+        <div class="tax">+ tax</div>
+      </div>
+    </div>
+    <div class="scroll-cue">Scroll</div>
+  </section>
+
+  <!-- LEDE -->
+  <section class="lede reveal">
+    <span class="eyebrow">The short version</span>
+    <p>Most hoops are <strong>assembled</strong>. This one is <strong>engineered</strong> — a 7"×7" square steel column, a welded and gear-driven lift arm, and a 3/8" tempered glass backboard, finished in a salt-spray-tested powder coat built for years outdoors.</p>
+    <p class="fine">Every install shown on this page is a real backyard, driveway, or court — not a studio render. Scroll down for the full anatomy of the frame and the complete spec sheet, in plain measurements.</p>
+  </section>
+
+  <!-- ANATOMY DIAGRAM -->
+  <section class="anatomy reveal">
+    <div class="anatomy-head">
+      <div>
+        <span class="eyebrow">Anatomy</span>
+        <h2>What's actually holding<br>the rim up.</h2>
+      </div>
+      <div class="cap">Callouts reference the same steel gauges and dimensions listed in the full spec sheet below.</div>
+    </div>
+
+    <div class="diagram-wrap">
+      <div class="diagram-frame">
+        <div class="diagram-img-box">
+          <img src="images/diagram.jpg" alt="Side profile of the basketball hoop showing backboard, rim, arm, and column">
+
+          <div class="callout c1">
+            <span class="dot"></span><span class="line"></span>
+            <span class="txt"><span class="label">Backboard</span><br><span class="val">71" × 41.3" tempered glass, 3/8" thick</span></span>
+          </div>
+          <div class="callout c2">
+            <span class="dot"></span><span class="line"></span>
+            <span class="txt"><span class="label">Rim</span><br><span class="val">13/16" solid round steel, ≤30° down-angle</span></span>
+          </div>
+          <div class="callout c3">
+            <span class="dot"></span><span class="line"></span>
+            <span class="txt"><span class="label">Extension arm</span><br><span class="val">37.8"–49.0" reach, welded steel tube</span></span>
+          </div>
+          <div class="callout c4">
+            <span class="dot"></span><span class="line"></span>
+            <span class="txt"><span class="label">Lift column</span><br><span class="val">7" × 7" square tube, screw-driven</span></span>
+          </div>
+          <div class="callout c5">
+            <span class="dot"></span><span class="line"></span>
+            <span class="txt"><span class="label">Base &amp; anchor</span><br><span class="val">5'11"–10'0" rim height range</span></span>
+          </div>
+        </div>
+
+        <div class="callout-list">
+          <div class="callout"><span class="dot"></span><span class="txt"><span class="label">Backboard</span><br><span class="val">71" × 41.3" tempered glass, 3/8" thick</span></span></div>
+          <div class="callout"><span class="dot"></span><span class="txt"><span class="label">Rim</span><br><span class="val">13/16" round steel, ≤30° angle</span></span></div>
+          <div class="callout"><span class="dot"></span><span class="txt"><span class="label">Extension arm</span><br><span class="val">37.8"–49.0" reach</span></span></div>
+          <div class="callout"><span class="dot"></span><span class="txt"><span class="label">Lift column</span><br><span class="val">7" × 7" square tube</span></span></div>
+          <div class="callout"><span class="dot"></span><span class="txt"><span class="label">Height range</span><br><span class="val">5'11"–10'0" rim height</span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEC SHEET -->
+  <section class="specsheet reveal">
+    <div class="specsheet-head">
+      <div>
+        <span class="eyebrow">Full spec sheet</span>
+        <h2>Every gauge, every measurement.</h2>
+      </div>
+      <div class="meta">Imperial units<br>Converted from mfg. metric spec</div>
+    </div>
+
+    <div class="spec-grid">
+      <div class="spec-group">
+        <h3>Backboard</h3>
+        <div class="spec-row"><span class="k">Material</span><span class="v">Tempered safety glass</span></div>
+        <div class="spec-row"><span class="k">Dimensions</span><span class="v">71" W × 41.3" H</span></div>
+        <div class="spec-row"><span class="k">Thickness</span><span class="v">3/8" (0.39")</span></div>
+        <div class="spec-row"><span class="k">Edge protection</span><span class="v">Cushioned lower-edge strip</span></div>
+      </div>
+
+      <div class="spec-group">
+        <h3>Rim</h3>
+        <div class="spec-row"><span class="k">Material</span><span class="v">Solid round steel</span></div>
+        <div class="spec-row"><span class="k">Diameter</span><span class="v">13/16" (0.79")</span></div>
+        <div class="spec-row"><span class="k">Down-angle</span><span class="v">≤ 30°</span></div>
+      </div>
+
+      <div class="spec-group">
+        <h3>Lift &amp; Arm Assembly</h3>
+        <div class="spec-row"><span class="k">Rim height range</span><span class="v">5'11" – 10'0"</span></div>
+        <div class="spec-row"><span class="k">Extension arm reach</span><span class="v">37.8" – 49.0"</span></div>
+        <div class="spec-row"><span class="k">Lead screw travel</span><span class="v">23.2"</span></div>
+        <div class="spec-row"><span class="k">Bevel gear set</span><span class="v">12T / 24T, module 2.5</span></div>
+        <div class="spec-row"><span class="k">Upper pull-rod tube</span><span class="v">1.89" OD</span></div>
+        <div class="spec-row"><span class="k">Lower pull-rod tube</span><span class="v">1.26" OD</span></div>
+        <div class="spec-row"><span class="k">Bushings</span><span class="v">Graphite-copper sleeve</span></div>
+        <div class="spec-row"><span class="k">Arm tubing</span><span class="v">2.36" × 1.57", 0.12" wall</span></div>
+      </div>
+
+      <div class="spec-group">
+        <h3>Column &amp; Frame</h3>
+        <div class="spec-row"><span class="k">Lift column</span><span class="v">7" × 7" square tube</span></div>
+        <div class="spec-row"><span class="k">Column wall</span><span class="v">0.12" (3mm)</span></div>
+        <div class="spec-row"><span class="k">Backboard frame tube</span><span class="v">1.57" × 1.57"</span></div>
+        <div class="spec-row"><span class="k">Flange plates</span><span class="v">3/8" steel</span></div>
+        <div class="spec-row"><span class="k">Mounting ear plates</span><span class="v">1/4" steel</span></div>
+      </div>
+
+      <div class="spec-group">
+        <h3>Finish &amp; Testing</h3>
+        <div class="spec-row"><span class="k">Surface prep</span><span class="v">Full oil &amp; rust removal</span></div>
+        <div class="spec-row"><span class="k">Coating thickness</span><span class="v">2.8 – 5.5 mils</span></div>
+        <div class="spec-row"><span class="k">Coating hardness</span><span class="v">3H+ pencil hardness</span></div>
+        <div class="spec-row"><span class="k">Corrosion test</span><span class="v">36-hr salt spray, GB1771-91</span></div>
+      </div>
+
+      <div class="spec-group">
+        <h3>Product</h3>
+        <div class="spec-row"><span class="k">Name</span><span class="v">Heavy-Duty Adjustable Hoop</span></div>
+        <div class="spec-row"><span class="k">Mount type</span><span class="v">In-ground, fixed base</span></div>
+        <div class="spec-row"><span class="k">Adjustment</span><span class="v">Screw-driven, manual crank</span></div>
+        <div class="spec-row"><span class="k">Price</span><span class="v">$1,800 + tax</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery reveal">
+    <div class="gallery-head">
+      <span class="eyebrow">Real installs</span>
+      <h2>Where it lives.</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/install-driveway.jpg" alt="Hoop installed in a driveway beside a hedge at golden hour">
+        <div class="gallery-cap">Driveway install — golden hour</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/install-brick-court.jpg" alt="Close-up of the rim over a brick paver patio and garden hedge">
+        <div class="gallery-cap">Rim detail — brick paver court</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/install-rim-hang.jpg" alt="Person hanging their full body weight from the rim">
+        <div class="gallery-cap">Rated for real weight</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/install-rural.jpg" alt="Hoop installed on a rural property beside a greenhouse and garden beds">
+        <div class="gallery-cap">Rural property install</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/install-concrete-patio.jpg" alt="Hoop installed on a fresh concrete patio mid-construction">
+        <div class="gallery-cap">Fresh concrete patio pour</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/install-modern-home.jpg" alt="Close-up of the rim and glass backboard against a modern home with glass balcony">
+        <div class="gallery-cap">Modern build, glass balcony backdrop</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing reveal">
+    <div class="closing-inner">
+      <h2>One install.<br><span>No do-overs.</span></h2>
+      <div class="price-block">
+        <span class="eyebrow">Heavy-Duty Adjustable Hoop</span>
+        <div class="amount">$1,800</div>
+        <div class="tax">+ tax</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="brand-mark">BUILDERS BAY <span style="color:var(--orange)">SPORTS SUPPLY</span></div>
+      <div>Heavy-Duty Adjustable Basketball Hoop</div>
+    </div>
+  </section>
+
+  <script>
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in'); }
+      });
+    }, {threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  </script>
+
+</body>
+</html>
